@@ -1,4 +1,4 @@
 package my.groupId;
 
-public record UserResponse(Long id, String message, Integer age) {
+public record UserResponse(Long id, String name, Integer age) {
 }

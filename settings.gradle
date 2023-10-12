@@ -9,4 +9,4 @@ pluginManagement {
     }
 }
 rootProject.name='my-artifactId'
-include 'qrk-app'
+include 'qrk-app', "jooq-gen"

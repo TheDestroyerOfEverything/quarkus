@@ -7,7 +7,8 @@ dependencies {
     implementation 'io.quarkus:quarkus-resteasy-reactive-jackson'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-agroal'
-// https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation 'io.quarkiverse.jooq:quarkus-jooq:2.0.0'
+
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
     implementation 'io.quarkus:quarkus-jdbc-postgresql'
     implementation("io.quarkus:quarkus-hibernate-validator")

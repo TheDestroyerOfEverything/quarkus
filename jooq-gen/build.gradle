@@ -1,0 +1,18 @@
+// Configure the Java plugin and the dependencies
+// ----------------------------------------------
+apply plugin: 'java'
+apply plugin: "application"
+
+mainClassName = 'org.jooq.example.gradle.db.JooqGenerator'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jooq:jooq:3.18.7'
+    implementation 'org.jooq:jooq-codegen:3.18.7'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
+    testImplementation 'junit:junit:4.11'
+}

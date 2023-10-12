@@ -6,5 +6,7 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 
-public record UserRequest(@NotEmpty String name, @NotNull Integer age) {
+public record UserRequest(@NotEmpty Long id,@NotEmpty String name, @NotNull Integer age) {
+
 }
+
